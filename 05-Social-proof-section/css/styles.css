@@ -54,8 +54,7 @@ p {
 
 .title h1 {
     color: hsl(300, 43%, 22%);
-    /* padding-top: 80px; */
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
 }
 
