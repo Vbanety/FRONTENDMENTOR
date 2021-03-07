@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Moderate-violet-clear: hsl(263, 60%, 75%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 13px;
+    width: 100%;
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    width: 85%;
+}
+
+.box-main-left {
+    width: 100%;
+}
+
+.box-main-right {
+    width: 33%;
+}
+
+.main-up-down {
+    display: flex;
+}
+
+.dan {
+    background-color: var(--Moderate-violet);
+    color: var(--White);
+    position: relative;
+    z-index: 1;
+}
+
+.dan::after {
+    content: '';
+    background-image: url('/images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    right: 12%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+.jon {
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--White);
+}
+
+.pat {
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--White);
+}
+
+.dan, .jon, .jea, .pat, .kir {
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 5px 15px 80px rgba(54, 48, 48, 0.2);
+    border-radius: 10px;
+}
+
+.purple {
+    border: 2px solid var(--Moderate-violet-clear);
+}
+
+.jea > h2 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.kir > h2 {
+    color: var(--Very-dark-grayish-blue);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin: 16px auto;
+    font-weight: 600;
+}
+
+h5 {
+    opacity: .7;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.3;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media(max-width: 1280px) {
+    body {
+        height: auto;
+    }
+
+    .box-main {
+        flex-wrap: wrap;
+    }
+    .box-main-right {
+        width: 100%;
+    }
+}
+
+@media(max-width: 720px) {
+
+    .box-main {
+        width: 95%;
+    }
+
+    .main-up-down {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
