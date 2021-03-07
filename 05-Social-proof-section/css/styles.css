@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', 'sans-serif';
+}
+
+#body {
+    position: relative;
+    height: 100vh;
+}
+
+#body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: top left;
+    width: 100%;
+    height: 400px;
+}
+
+#body::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('/images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: top left;
+    width: 100%;
+    height: 400px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: hsl(300, 43%, 22%);
+    padding-top: 80px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.texts {
+    color: hsl(303, 10%, 53%);
+    margin: 30px 0;
+}
+
+.starBack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 17px 0;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.stars {
+    margin-bottom: 50px;
+}
+
+.textStar {
+    color: hsl(300, 43%, 22%);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cardOne, .cardTwo, .cartThree {
+    position: relative;
+}
+
+.textCard {
+    color: hsl(333, 80%, 67%);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.cardColton, .cardIrene, .cardAnne {
+    color: #fff;
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px 35px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.avatar {
+    display: flex;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fontCards {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media(min-width: 1100px) {
+    #up {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title {
+        width: 40%;
+    }
+    .stars {
+        margin-top: 80px;
+        width: 450px;
+    }
+    .textStar {
+        margin-right: 40px;
+    }
+    .stars {
+        display: grid;
+        grid-template-rows: 60px 60px 60px;
+        gap: 10px;
+        position: relative;
+    }
+    .starOne, .starTwo, .starThree {
+        position: relative;
+        height: 60px;
+    }
+    .setLeft, .setMeddle, .setRight {
+        position: absolute;
+    }
+    .setLeft {
+        left: -80px;
+        right: 80px;
+    }
+    .setMeddle {
+        left: -40px;
+        right: 40px;
+    }
+    .setRight {
+        left: 0px;
+        right: 0;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        position: relative;
+    }
+    .cardColton, .cardIrene, .cardAnne {
+        height: 230px;
+    }
+    .cardOne, .cardTwo, .cartThree {
+        position: relative;
+    }
+    .cardIrene {
+        position: absolute;
+        top: 20px;
+    }
+    .cardAnne {
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media(min-width: 600px) {
+    #body::after {
+        width: 50%;
+    }
+    #body::after {
+        width: 35%;
+        height: 400px;
+    }
+    #body::before {
+        width: 100%;
+        height: 400px;
+    }
+    #down {
+        margin-top: 40px;
+    }
+    .title {
+        text-align: left;
+    }
+    .starBack {
+        flex-direction: row;
+    }
+    .leftStar {
+        margin: 0 25px;
+    }
+    h1 {
+        width: 90%;
+    }
+    .title h1 {
+        font-size: 45px;
+        line-height: 1;
+    }
+}
