@@ -104,6 +104,7 @@ p {
 
 .avatar {
     display: flex;
+    height: 65px;
 }
 
 .avatar img {
@@ -117,9 +118,10 @@ p {
 .fontCards {
     font-size: 13px;
     font-weight: 500;
+    height: 80px;
 }
 
-@media(min-width: 1100px) {
+@media(min-width: 1105px) {
     #up {
         display: flex;
         justify-content: space-between;
@@ -167,7 +169,7 @@ p {
         position: relative;
     }
     .cardColton, .cardIrene, .cardAnne {
-        height: 230px;
+        height: 240px;
     }
     .cardOne, .cardTwo, .cartThree {
         position: relative;
@@ -210,7 +212,6 @@ p {
         width: 90%;
     }
     .title h1 {
-        font-size: 45px;
         line-height: 1;
     }
 }

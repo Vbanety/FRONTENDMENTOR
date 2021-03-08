@@ -107,10 +107,10 @@ h3 {
     font-size: 13px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 960px) {
     #container {
-        width: 60%;
-        height: auto;
+        width: 50%;
+        height: 480px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:  1fr 1fr;
@@ -121,23 +121,19 @@ h3 {
 
     #sec-one {
         grid-area: sec-one;
-        
     }
 
     #sec-two {
         grid-area: sec-two;
+        border-bottom-left-radius: 5px;
     }
 
     #sec-three {
         grid-area: sec-three;
+        border-bottom-right-radius: 5px;
     }
 
-    #sec-one {
-        padding: 0px 40px;
-        display: block;
-    }
-
-    #sec-two, #sec-three {
+    #sec-one, #sec-two, #sec-three {
         padding: 40px;
     }
 
