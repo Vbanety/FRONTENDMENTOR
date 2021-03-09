@@ -23,8 +23,12 @@ body {
     background-color: var(--Light-Gray);
 }
 
-h3 {
+h1 {
     font-weight: 700;
+}
+
+li {
+    list-style-type: none;
 }
 
 #container {
@@ -44,7 +48,7 @@ h3 {
     border-radius: 5px 5px 0 0;
 }
 
-#sec-one h3, span, p {
+#sec-one h1, span, p {
     margin: 10px 0;
 }
 
@@ -56,7 +60,7 @@ h3 {
     color: var(--Grayish-Blue);
 }
 
-#sec-one>h3 {
+#sec-one>h1 {
     color: var(--Cyan);
 }
 
@@ -78,7 +82,7 @@ h3 {
     font-weight: 700;
 }
 
-#sec-two h3, span, p, button {
+#sec-two h1, span, p, button {
     margin: 5px 0;
 }
 
@@ -98,13 +102,22 @@ h3 {
     color: var(--Light-Gray);
 }
 
-#sec-three>h3 {
-    margin-bottom: 15px;
+.list {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
 }
 
-#sec-three>p {
+#sec-three ul li:first-child {
+    margin-top: 15px;
+}
+
+
+#sec-three ul li {
     line-height: 0.8;
     font-size: 13px;
+    font-weight: 400;
+    padding: 5px 0;
 }
 
 @media(min-width: 960px) {
@@ -138,7 +151,7 @@ h3 {
         padding: 40px;
     }
 
-    #sec-one h3, span, p  {
+    #sec-one h1, span, p  {
         margin: 0px;
     }
 }
