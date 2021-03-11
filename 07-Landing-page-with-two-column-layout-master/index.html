@@ -18,7 +18,7 @@
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: #fff;
     }
   </style>
 </head>
@@ -36,16 +36,17 @@
 
     <main>
       <section class="sectionOne">
-        <img src="/images/illustration-1.svg" alt="icon-email" width="200" height="200">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends,
-          family, and co-workers.</p>
-        <form>
-          <input type="text" placeholder="Enter your email..">
-          <input type="submit" value="Get Started">
-
-        </form>
+        <img src="/images/illustration-1.svg" alt="icon-email">
+        <div>
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
+          <form>
+            <input type="text" placeholder="Enter your email..">
+            <input type="submit" value="Get Started">
+          </form>
+        </div>
       </section>
 
       <section class="sectionTwo">
@@ -75,51 +76,61 @@
           </div>
         </div>
       </section>
-    </main>
 
-    <footer>
-      <div class="footer-access">
-        <h1>Get early access today</h1>
-        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
-          our support team would be happy to help you.</p>
-        <form action="">
+      <div class="sectionThree">
+        <div>
+          <h1>Get early access today</h1>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+            questions,
+            our support team would be happy to help you.</p>
+        </div>
+        <form>
           <input type="text" placeholder="email@example.com" />
           <input type="submit" value="Get Started For Free" />
         </form>
       </div>
 
-      <div class="footer">
-        <img src="/images/logo-white.svg" alt="logo-white" class="logo-white">
-        <p><img src="/images/icon-phone.svg" alt="phone">Phone: +1-543-123-4567</p>
-        <p><img src="/images/icon-email.svg" alt="icon-email">example@fylo.com</p>
-
-        <ul>
-          <li><a href="">AboutUs</a></li>
-          <li><a href="">Jobs</a></li>
-          <li><a href="">Press</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="">ContactUs</a></li>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Privacy</a></li>
-        </ul>
-        <ul class="social">
-          <li><img src="/images/" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-        </ul>
-      </div>
-    </footer>
+    </main>
 
     <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Vinicius Batista</a>.
-      </p>
-    </footer>
+      <div class="footer">
+        <img src="/images/logo-white.svg" alt="logo-white" class="logo-white">
+        <div class="flex-contats">
+          
 
+          <div>
+            <p class="contacts"><img src="/images/icon-phone.svg" alt="phone">Phone: +1-543-123-4567</p>
+            <p class="contacts"><img src="/images/icon-email.svg" alt="icon-email">example@fylo.com</p>
+          </div>
+          <ul class="list-contacts">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+
+          <ul class="list-contacts">
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+          
+          <ul class="social-media">
+            <li><img src="/images/icon-facebook2.svg" alt="icon-facebook"></li>
+            <li><img src="/images/icon-twitter2.svg" alt="icon-twitter"></li>
+            <li><img src="/images/icon-instagram2.svg" alt=""></li>
+          </ul>
+
+        </div>
+        
+
+        <br>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Vinicius Batista</a>.
+        </p>
+      </div>
+    </footer>
   </div>
 </body>
 
