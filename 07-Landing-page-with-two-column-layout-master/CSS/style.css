@@ -31,11 +31,11 @@
 body {
     /* padding: 0 30px; */
     height: 100vh;
-    margin: auto;
+    position: relative;
 }
 
 #container {
-    margin-top: 20px;
+    margin: 50px;
 }
 
 header {
@@ -43,15 +43,15 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
-    padding: 0 25px;
+    /* padding: 0 35px; */
 }
 
 header img {
-    width: 100px;
+    width: 180px;
 }
 
 .header-list {
-    font-size: 12.5px;
+    font-size: 18px;
     color: var(--Very-Dark-Blue);
 }
 
@@ -61,22 +61,107 @@ header ul {
 }
 
 header ul li {
-    margin: auto 10px;
+    margin: auto 30px;
 }
 
-main {
+.section-one, .section-two, .section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-one {
+    margin-bottom: 80px;
+}
+
+.sec-discreption, .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.sec-discreption h1 {
+    font-size: 40px;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 20px;
+}
+
+.sec-discreption p {
+    margin-bottom: 20px;
+}
+
+.sec-discreption form {
+    display: flex;
+}
+
+.sec-discreption form input{
+    height: 40px;
+}
+
+.sec-discreption form input:first-child {
+    width: 250px;
+}
+
+.sec-discreption form input[type=submit] {
+    width: 200px;
+    background-color: var(--Bright-Blue);    
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.sec-discreption form input[type=submit]:hover {
+    background-color: var(--Light-Gray);
+}
+
+figure  {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img {
+    width: 90%;
+    
+}
+
+.section-two {
+    position: relative;
+}
+
+.section-two::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    background-image: url('/images/bg-curve-desktop.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: -3;
+}
+
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     margin: 0;
-}
+} */
 
-section {
+/* section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 35px;
 }
 
 section h1, h2 {
@@ -322,10 +407,8 @@ div>bold {
     height: 15px;
 }
 
-
 @media(min-width: 600px) {
 
-    
     header img {
         width: 20%;
     }
@@ -412,5 +495,4 @@ div>bold {
         height: 50px;
         padding: 0;
     }
-
-}
+} */
